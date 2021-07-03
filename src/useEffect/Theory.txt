@@ -1,0 +1,10 @@
+useEffect saare lifecycle methods ki functionality functional components mei dedeta hai
+So with useEffect you can invoke sideeffects like data feftching network requests etc from within functional components
+
+Imp-> useEffect are run after render
+
+Syntax:
+useEffect(()=>{
+   ....code....
+},optional dependancy array);
+2 arguments leta hai,callback fn and dependancy arr
