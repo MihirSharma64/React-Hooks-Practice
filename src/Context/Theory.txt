@@ -1,0 +1,16 @@
+////// Context  API
+See the component tree in img
+agar top pe koi state value thi jo hume niche ke 3 components mei access krni hai...To iska normal tareeka kya hoga? parent se child kya pass kar skte hai?Props...To aise down down props pass krane honge
+Aur jinko zarurat nhi thi uss property ki uspe bhi jayega props...Isko props drilling kehte hai,deeper levels tak pass kr krke dena props. Complicated process hai yeh, jinko zarurat nhi thi unko bhi milgyi
+
+Context-> It provides a way to pass data through the component tree without having to pass props down manually at every level.
+
+When to use context?
+->Context is designed to share data that caan be considered global for a tree of react components,Eg:authenicated user,theme(jaise bacground color jo ho theme ka wo har component mei same hona chahiye to uske liye context use krenge)
+
+
+Syntax:
+const myContext = React.createContext(defaultval); // creates a context obj
+
+isko consume kaise kre,consumption : (Hook hota hai useContext)
+-> const val = useContext(myContext); // isse jo upar defaultval di thi wo iss val mei ajayegi
